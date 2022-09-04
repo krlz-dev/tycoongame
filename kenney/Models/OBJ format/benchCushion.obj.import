@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/benchCushion.obj-c66ecb2a2a0039eff2cc13592b4bbcfa.mesh"
+
+[deps]
+
+files=[ "res://.import/benchCushion.obj-c66ecb2a2a0039eff2cc13592b4bbcfa.mesh" ]
+
+source_file="res://kenney/Models/OBJ format/benchCushion.obj"
+dest_files=[ "res://.import/benchCushion.obj-c66ecb2a2a0039eff2cc13592b4bbcfa.mesh", "res://.import/benchCushion.obj-c66ecb2a2a0039eff2cc13592b4bbcfa.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

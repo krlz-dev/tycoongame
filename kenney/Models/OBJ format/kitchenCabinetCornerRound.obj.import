@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/kitchenCabinetCornerRound.obj-8b82e08840f803e92e456ce0afe3daca.mesh"
+
+[deps]
+
+files=[ "res://.import/kitchenCabinetCornerRound.obj-8b82e08840f803e92e456ce0afe3daca.mesh" ]
+
+source_file="res://kenney/Models/OBJ format/kitchenCabinetCornerRound.obj"
+dest_files=[ "res://.import/kitchenCabinetCornerRound.obj-8b82e08840f803e92e456ce0afe3daca.mesh", "res://.import/kitchenCabinetCornerRound.obj-8b82e08840f803e92e456ce0afe3daca.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

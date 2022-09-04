@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/toiletSquare.obj-bdc019099120b5a1926d6fc9571e8cb3.mesh"
+
+[deps]
+
+files=[ "res://.import/toiletSquare.obj-bdc019099120b5a1926d6fc9571e8cb3.mesh" ]
+
+source_file="res://kenney/Models/OBJ format/toiletSquare.obj"
+dest_files=[ "res://.import/toiletSquare.obj-bdc019099120b5a1926d6fc9571e8cb3.mesh", "res://.import/toiletSquare.obj-bdc019099120b5a1926d6fc9571e8cb3.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

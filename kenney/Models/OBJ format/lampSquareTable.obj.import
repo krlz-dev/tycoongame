@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/lampSquareTable.obj-688e68cafbb54412d945c918a3aa282c.mesh"
+
+[deps]
+
+files=[ "res://.import/lampSquareTable.obj-688e68cafbb54412d945c918a3aa282c.mesh" ]
+
+source_file="res://kenney/Models/OBJ format/lampSquareTable.obj"
+dest_files=[ "res://.import/lampSquareTable.obj-688e68cafbb54412d945c918a3aa282c.mesh", "res://.import/lampSquareTable.obj-688e68cafbb54412d945c918a3aa282c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

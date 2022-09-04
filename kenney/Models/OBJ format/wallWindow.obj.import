@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallWindow.obj-fc16e5dfdf0e9bb9c7d49fce89d16a88.mesh"
+
+[deps]
+
+files=[ "res://.import/wallWindow.obj-fc16e5dfdf0e9bb9c7d49fce89d16a88.mesh" ]
+
+source_file="res://kenney/Models/OBJ format/wallWindow.obj"
+dest_files=[ "res://.import/wallWindow.obj-fc16e5dfdf0e9bb9c7d49fce89d16a88.mesh", "res://.import/wallWindow.obj-fc16e5dfdf0e9bb9c7d49fce89d16a88.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

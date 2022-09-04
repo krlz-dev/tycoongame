@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/pillowBlueLong.obj-e2d6f77aef7f0b5dcf3c2502b4b9ec6f.mesh"
+
+[deps]
+
+files=[ "res://.import/pillowBlueLong.obj-e2d6f77aef7f0b5dcf3c2502b4b9ec6f.mesh" ]
+
+source_file="res://kenney/Models/OBJ format/pillowBlueLong.obj"
+dest_files=[ "res://.import/pillowBlueLong.obj-e2d6f77aef7f0b5dcf3c2502b4b9ec6f.mesh", "res://.import/pillowBlueLong.obj-e2d6f77aef7f0b5dcf3c2502b4b9ec6f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

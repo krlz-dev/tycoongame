@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://floor/walls.svg" type="Texture" id=1]
+[ext_resource path="res://floor/floor-isometric.png" type="Texture" id=2]
+
+[node name="World" type="Node2D"]
+
+[node name="Room" type="YSort" parent="."]
+
+[node name="Floor" type="YSort" parent="Room"]
+
+[node name="Sprite" type="Sprite" parent="Room/Floor"]
+position = Vector2( 160.735, 85.25 )
+scale = Vector2( 0.388889, 0.388889 )
+texture = ExtResource( 2 )
+
+[node name="Walls" type="YSort" parent="Room"]
+
+[node name="Sprite" type="Sprite" parent="Room/Walls"]
+position = Vector2( 161.468, 47.125 )
+scale = Vector2( 0.39125, 0.39125 )
+texture = ExtResource( 1 )

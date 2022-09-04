@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/benchCushion_NW.png-e05e09b61e1d607c963cb61c717176af.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://kenney/Isometric/benchCushion_NW.png"
+dest_files=[ "res://.import/benchCushion_NW.png-e05e09b61e1d607c963cb61c717176af.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

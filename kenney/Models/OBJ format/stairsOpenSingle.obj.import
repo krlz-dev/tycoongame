@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/stairsOpenSingle.obj-f0a9bb600413ccd74418ef5dfe6df305.mesh"
+
+[deps]
+
+files=[ "res://.import/stairsOpenSingle.obj-f0a9bb600413ccd74418ef5dfe6df305.mesh" ]
+
+source_file="res://kenney/Models/OBJ format/stairsOpenSingle.obj"
+dest_files=[ "res://.import/stairsOpenSingle.obj-f0a9bb600413ccd74418ef5dfe6df305.mesh", "res://.import/stairsOpenSingle.obj-f0a9bb600413ccd74418ef5dfe6df305.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

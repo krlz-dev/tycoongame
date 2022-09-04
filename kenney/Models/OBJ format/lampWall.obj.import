@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/lampWall.obj-791cde8ea72f366a86c81ab426ba860e.mesh"
+
+[deps]
+
+files=[ "res://.import/lampWall.obj-791cde8ea72f366a86c81ab426ba860e.mesh" ]
+
+source_file="res://kenney/Models/OBJ format/lampWall.obj"
+dest_files=[ "res://.import/lampWall.obj-791cde8ea72f366a86c81ab426ba860e.mesh", "res://.import/lampWall.obj-791cde8ea72f366a86c81ab426ba860e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

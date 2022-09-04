@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/lampRoundFloor.obj-965182f8bce317b8b0903e532e58c17c.mesh"
+
+[deps]
+
+files=[ "res://.import/lampRoundFloor.obj-965182f8bce317b8b0903e532e58c17c.mesh" ]
+
+source_file="res://kenney/Models/OBJ format/lampRoundFloor.obj"
+dest_files=[ "res://.import/lampRoundFloor.obj-965182f8bce317b8b0903e532e58c17c.mesh", "res://.import/lampRoundFloor.obj-965182f8bce317b8b0903e532e58c17c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

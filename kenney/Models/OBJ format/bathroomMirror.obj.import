@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/bathroomMirror.obj-1b53a014daf180e6bf3f57427581a26a.mesh"
+
+[deps]
+
+files=[ "res://.import/bathroomMirror.obj-1b53a014daf180e6bf3f57427581a26a.mesh" ]
+
+source_file="res://kenney/Models/OBJ format/bathroomMirror.obj"
+dest_files=[ "res://.import/bathroomMirror.obj-1b53a014daf180e6bf3f57427581a26a.mesh", "res://.import/bathroomMirror.obj-1b53a014daf180e6bf3f57427581a26a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

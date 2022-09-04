@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/ceilingFan.obj-c7ba9d7d3cb7938a5d6f74f383efb3eb.mesh"
+
+[deps]
+
+files=[ "res://.import/ceilingFan.obj-c7ba9d7d3cb7938a5d6f74f383efb3eb.mesh" ]
+
+source_file="res://kenney/Models/OBJ format/ceilingFan.obj"
+dest_files=[ "res://.import/ceilingFan.obj-c7ba9d7d3cb7938a5d6f74f383efb3eb.mesh", "res://.import/ceilingFan.obj-c7ba9d7d3cb7938a5d6f74f383efb3eb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
