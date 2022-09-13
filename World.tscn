@@ -64,16 +64,34 @@ custom_styles/fg = SubResource( 1 )
 max_value = 31.0
 step = 1.0
 
-[node name="Timer" type="Timer" parent="Job-mechanics"]
+[node name="DaysTimer" type="Timer" parent="Job-mechanics"]
 
 [node name="DaysNotification" type="Label" parent="Job-mechanics"]
 margin_left = 240.0
 margin_top = 64.0
 margin_right = 287.0
 margin_bottom = 78.0
+rect_pivot_offset = Vector2( 16, 7 )
 text = "Days: 0"
+
+[node name="SelectedJob" type="Label" parent="Job-mechanics"]
+margin_left = 240.0
+margin_top = 96.0
+margin_right = 338.0
+margin_bottom = 110.0
+text = "Selected job is:"
+
+[node name="JobTimer" type="Timer" parent="Job-mechanics"]
+
+[node name="CurrentMoney" type="Label" parent="Job-mechanics"]
+margin_left = 240.0
+margin_top = 648.0
+margin_right = 339.0
+margin_bottom = 662.0
+text = "Current money:"
 
 [connection signal="popup_hide" from="Job-mechanics/JobSelector" to="Job-mechanics" method="_on_JobSelector_popup_hide"]
 [connection signal="pressed" from="Job-mechanics/GetJob" to="Job-mechanics" method="_on_GetJob_pressed"]
 [connection signal="pressed" from="Job-mechanics/StartGame" to="Job-mechanics" method="_on_StartGame_pressed"]
-[connection signal="timeout" from="Job-mechanics/Timer" to="Job-mechanics" method="_on_Timer_timeout"]
+[connection signal="timeout" from="Job-mechanics/DaysTimer" to="Job-mechanics" method="_on_DaysTimer_timeout"]
+[connection signal="timeout" from="Job-mechanics/JobTimer" to="Job-mechanics" method="_on_JobTimer_timeout"]

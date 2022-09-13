@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Reference",
+"class": "Job",
+"language": "GDScript",
+"path": "res://jobs/Job.gd"
+} ]
+_global_script_class_icons={
+"Job": ""
+}
+
 [application]
 
 config/name="gametycoon"
