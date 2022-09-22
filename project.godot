@@ -13,9 +13,21 @@ _global_script_classes=[ {
 "class": "Job",
 "language": "GDScript",
 "path": "res://jobs/Job.gd"
+}, {
+"base": "Reference",
+"class": "JobData",
+"language": "GDScript",
+"path": "res://jobs/JobData.gd"
+}, {
+"base": "Node",
+"class": "UUID",
+"language": "GDScript",
+"path": "res://utilities/uuid.gd"
 } ]
 _global_script_class_icons={
-"Job": ""
+"Job": "",
+"JobData": "",
+"UUID": ""
 }
 
 [application]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://elements/experience/iridium.png" type="Texture" id=1]
+
+[node name="IridiumStar" type="TextureRect"]
+margin_left = 244.0
+margin_right = 263.0
+margin_bottom = 22.0
+texture = ExtResource( 1 )

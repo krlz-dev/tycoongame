@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/select-job-menu.png-e80e20ce2eec28ec2b7e2969b826f9e6.stex"
+path="res://.import/silver.png-4ca74f78541637e89988e6a9092bb6bd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://jobs/select-job-menu.png"
-dest_files=[ "res://.import/select-job-menu.png-e80e20ce2eec28ec2b7e2969b826f9e6.stex" ]
+source_file="res://elements/experience/silver.png"
+dest_files=[ "res://.import/silver.png-4ca74f78541637e89988e6a9092bb6bd.stex" ]
 
 [params]
 
