@@ -8,7 +8,6 @@ export(int) var SERVICES = 70
 export(int) var COFFE = 20
  
 onready var jobElements = $JobElements
-onready var jobsList = $JobElements/JobsMenu
 onready var jobListMenu = $JobElements/JobListMenu
 onready var daysTimer = $JobElements/DaysTimer
 onready var jobTimer = $JobElements/JobTimer
@@ -37,13 +36,17 @@ var daysProgressTween= Tween.new()
 var workingProgressTween= Tween.new()
 
 func _ready():
-	jobListMenu.popup()
+	jobListMenu.connect("select_job", self, "_on_select_job")
 	mainScreen.show()
 	developer.set_activity("drinking_coffe")
 	progressBar.max_value = MONTH_DAYS
 	currentMoney.text = currentMoneyMessage % CURRENT_MONEY
 	jobElements.add_child(daysProgressTween)
 	jobElements.add_child(workingProgressTween)
+
+func _on_select_job(job):
+	SELECTED_JOB = job
+	jobListMenu.hide()
 
 func _on_StartGame_pressed():
 	create_jobs()
@@ -52,7 +55,7 @@ func _on_StartGame_pressed():
  
 func _on_GetJob_pressed():
 	daysTimer.paused = true
-	jobsList.popup()
+	jobListMenu.popup()
 	
 func set_days():
 	if days >= MONTH_DAYS:
@@ -66,10 +69,10 @@ func pay_month_expenses():
 	endMonthDialog.dialog_text = finishMonthMessage % [RENT+SERVICES+COFFE, self.CURRENT_MONEY]
 	endMonthDialog.popup()
  
-func start_working():
+func start_working(job:Object):
 	developer.set_activity("working") 
-	selectedJob.text = selectedJobName % SELECTED_JOB.name
-	workingProgress.max_value = SELECTED_JOB.time
+	selectedJob.text = selectedJobName % job.name
+	workingProgress.max_value = job.time
 	jobTimer.start(1)
 	
 func _on_DaysTimer_timeout():
@@ -105,15 +108,32 @@ func check_money_status():
 		daysTimer.queue_free()
 		 
 func create_jobs():
-	jobsInventory.append(JobData.new("Simple html page",2,100))
-	jobsInventory.append(JobData.new("Concert ads page",2,300))
-	jobsInventory.append(JobData.new("CRM project consulting",3,400))
-	jobsInventory.append(JobData.new("Pet shop website",5,600))
-	jobsInventory.append(JobData.new("Personal blog made in wordpress",3,500))
-	jobsInventory.append(JobData.new("Create a social media group with memes",1,10))
+	jobsInventory.append(JobData.new("Simple html page",2,100,1))
+	jobsInventory.append(JobData.new("Concert ads page",2,300,1))
+	jobsInventory.append(JobData.new("CRM project consulting",3,400,3))
+	jobsInventory.append(JobData.new("Pet shop website",5,600,4))
+	jobsInventory.append(JobData.new("Personal blog made in wordpress",3,500,5))
+	jobsInventory.append(JobData.new("Create a social media group with memes",1,10,6))
+	jobsInventory.append(JobData.new("Simple html page",2,100,1))
+	jobsInventory.append(JobData.new("Concert ads page",2,300,7))
+	jobsInventory.append(JobData.new("CRM project consulting",3,400,1))
+	jobsInventory.append(JobData.new("Pet shop website",5,600,1))
+	jobsInventory.append(JobData.new("Personal blog made in wordpress",3,500,1))
+	jobsInventory.append(JobData.new("Create a social media group with memes",1,10,1))
+	jobsInventory.append(JobData.new("Simple html page",2,100,1))
+	jobsInventory.append(JobData.new("Concert ads page",2,300,1))
+	jobsInventory.append(JobData.new("CRM project consulting",3,400,1))
+	jobsInventory.append(JobData.new("Pet shop website",5,600,1))
+	jobsInventory.append(JobData.new("Personal blog made in wordpress",3,500,6))
+	jobsInventory.append(JobData.new("Create a social media group with memes",1,10,1))
+	jobsInventory.append(JobData.new("Simple html page",2,100,1))
+	jobsInventory.append(JobData.new("Concert ads page",2,300,1))
+	jobsInventory.append(JobData.new("CRM project consulting",3,400,1))
+	jobsInventory.append(JobData.new("Pet shop website",5,600,1))
+	jobsInventory.append(JobData.new("Personal blog made in wordpress",3,500,1))
+	jobsInventory.append(JobData.new("Create a social media group with memes",1,10,7))
 	
-	for job in jobsInventory:
-		jobsList.add_item(job.name,job.id)
+	jobListMenu.set_jobs(jobsInventory)
  
 func _on_ReceivedMoney_about_to_show():
 	daysTimer.paused = true
@@ -121,10 +141,6 @@ func _on_ReceivedMoney_about_to_show():
 func _on_ReceivedMoney_popup_hide():
 	daysTimer.paused = false
 	self.workDays = 0
-
-func _on_JobsMenu_popup_hide():
-	daysTimer.paused = false
-	start_working()
 
 func _on_JobsMenu_index_pressed(index):
 	SELECTED_JOB = {"id":jobsInventory[index].id,"name":jobsInventory[index].name,"time":jobsInventory[index].time, "payment":jobsInventory[index].payment}
@@ -134,3 +150,7 @@ func _on_EndMonthDialog_about_to_show():
 
 func _on_EndMonthDialog_popup_hide():
 	daysTimer.paused = false
+
+func _on_JobListMenu_popup_hide():
+	daysTimer.paused = false
+	start_working(SELECTED_JOB)
