@@ -12,6 +12,7 @@ func set_jobs(jobsInventory:Array):
 		var newJobItem = newJobItemResource.instance()
 		newJobItem.connect("select_job", self, "_on_select_job")
 		newJobItem.set_description(job)
+		newJobItem.mouse_filter = MOUSE_FILTER_STOP
 		listContainer.add_child(newJobItem)
 
 func _on_Button_pressed():

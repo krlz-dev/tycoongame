@@ -55,6 +55,7 @@ func _on_StartGame_pressed():
  
 func _on_GetJob_pressed():
 	daysTimer.paused = true
+	jobTimer.paused = true
 	jobListMenu.popup()
 	
 func set_days():
@@ -89,6 +90,7 @@ func _on_JobTimer_timeout():
 		self.CURRENT_MONEY += SELECTED_JOB.payment
 		workIsDoneDialog.dialog_text = finishedJobMessage % [SELECTED_JOB.name,SELECTED_JOB.payment]
 		developer.set_activity("drinking_coffe")
+		print("hey!")
 		workIsDoneDialog.popup()
 		
 func set_working_days(value):
@@ -109,30 +111,22 @@ func check_money_status():
 		 
 func create_jobs():
 	jobsInventory.append(JobData.new("Simple html page",2,100,1))
+	jobsInventory.append(JobData.new("Simple html page",2,100,1))
+	jobsInventory.append(JobData.new("Simple html page",2,100,1))
+	jobsInventory.append(JobData.new("Simple html page",2,100,1))
+	jobsInventory.append(JobData.new("Simple html page",2,100,1))
+	jobsInventory.append(JobData.new("Simple html page",2,100,1))
+	jobsInventory.append(JobData.new("Simple html page",2,100,1))
+	jobsInventory.append(JobData.new("Simple html page",2,100,1))
+	jobsInventory.append(JobData.new("Simple html page",2,100,1))
+	jobsInventory.append(JobData.new("Simple html page",2,100,1))
+	jobsInventory.append(JobData.new("Simple html page",2,100,1))
 	jobsInventory.append(JobData.new("Concert ads page",2,300,1))
 	jobsInventory.append(JobData.new("CRM project consulting",3,400,3))
 	jobsInventory.append(JobData.new("Pet shop website",5,600,4))
 	jobsInventory.append(JobData.new("Personal blog made in wordpress",3,500,5))
 	jobsInventory.append(JobData.new("Create a social media group with memes",1,10,6))
-	jobsInventory.append(JobData.new("Simple html page",2,100,1))
-	jobsInventory.append(JobData.new("Concert ads page",2,300,7))
-	jobsInventory.append(JobData.new("CRM project consulting",3,400,1))
-	jobsInventory.append(JobData.new("Pet shop website",5,600,1))
-	jobsInventory.append(JobData.new("Personal blog made in wordpress",3,500,1))
-	jobsInventory.append(JobData.new("Create a social media group with memes",1,10,1))
-	jobsInventory.append(JobData.new("Simple html page",2,100,1))
-	jobsInventory.append(JobData.new("Concert ads page",2,300,1))
-	jobsInventory.append(JobData.new("CRM project consulting",3,400,1))
-	jobsInventory.append(JobData.new("Pet shop website",5,600,1))
-	jobsInventory.append(JobData.new("Personal blog made in wordpress",3,500,6))
-	jobsInventory.append(JobData.new("Create a social media group with memes",1,10,1))
-	jobsInventory.append(JobData.new("Simple html page",2,100,1))
-	jobsInventory.append(JobData.new("Concert ads page",2,300,1))
-	jobsInventory.append(JobData.new("CRM project consulting",3,400,1))
-	jobsInventory.append(JobData.new("Pet shop website",5,600,1))
-	jobsInventory.append(JobData.new("Personal blog made in wordpress",3,500,1))
-	jobsInventory.append(JobData.new("Create a social media group with memes",1,10,7))
-	
+
 	jobListMenu.set_jobs(jobsInventory)
  
 func _on_ReceivedMoney_about_to_show():
@@ -152,5 +146,6 @@ func _on_EndMonthDialog_popup_hide():
 	daysTimer.paused = false
 
 func _on_JobListMenu_popup_hide():
+	jobTimer.paused = false
 	daysTimer.paused = false
 	start_working(SELECTED_JOB)
